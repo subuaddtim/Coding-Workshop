@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online shopping</title>
+	
+</head>
+<body>
+
+<h3>Favorite Site</h3>
+<label>
+	<input type="radio" name="Online_shopping" value="Flipkart" onclick="Online_shopping(this.value);">	Flipkart
+</label>
+<label>
+	<input type="radio" name="Online_shopping" value="Amazone" onclick="Online_shopping(this.value);"> Amazone
+</label>
+<label>
+	<input type="radio" name="Online_shopping" value="Paytm" onclick="Online_shopping(this.value);">Paytm
+</label>
+<label>
+	<input type="radio" name="Online_shopping" value="Snapdeal" onclick="Online_shopping(this.value);">Snapdeal
+</label>
+
+</body>
+<script>
+  var Online_shopping, Sale;
+  function Online_shopping(Sale) {
+	if (Sale == "Flipkart") {
+		alert("Today Big Billion Day!");
+		}
+	else if (Sale == "Amazone") {
+		alert("No Offers check paytm!");
+	}
+	else if (Sale == "Paytm") {
+		alert("No Offers check Snapdeal!");
+	}
+	else {
+		alert(" Offers comming soon...");
+	}
+	
+}
+</script>
+</html>
