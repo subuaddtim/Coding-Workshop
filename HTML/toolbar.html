@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.min.js"></script>
+</head>
+<body>
+    <div id="myToolbar"></div>
+</body>
+<script>
+$(function () {
+    $('#myToolbar').w2toolbar({
+        name : 'myToolbar',
+        items: [
+            { type: 'check',  id: 'item1', caption: 'Check', img: 'icon-add', checked: true },
+            { type: 'break' },
+            { type: 'menu',   id: 'item2', caption: 'Drop Down', img: 'icon-folder', 
+                items: [
+                    { text: 'Item 1', img: 'icon-page' }, 
+                    { text: 'Item 2', img: 'icon-page' }, 
+                    { text: 'Item 3', img: 'icon-page' },
+                    { text: 'Item 1', img: 'icon-page' }, 
+                    { text: 'Item 2', img: 'icon-page' }, 
+                    { text: 'Item 3', img: 'icon-page' }
+
+                ]
+            },
+            { type: 'break' },
+            { type: 'radio',  id: 'item3',   caption: 'Radio 1', img: 'icon-page' },
+            { type: 'radio',  id: 'item4',   caption: 'Radio 2', img: 'icon-page' },
+            { type: 'radio',  id: 'item7',  group: '1', caption: 'Radio 3', img: 'icon-page' },
+            { type: 'radio', id: 'item13', text: '', img: 'glyphicon glyphicon-th-list', tooltip: 'Patient list'},
+            { type: 'radio',  id: 'item8',  group: '1', caption: 'Radio 4', img: 'icon-page' },
+            { type: 'break' },
+            { type: 'submitt',  id: 'item5',  group: '1', caption: 'Radio 3', img:'icon-folder' },
+            { type: 'spacer'  },
+            { type: 'button',  id: 'item6',  caption: 'Item 7', img: 'icon-save' }
+        ]
+    });
+});
+</script>
+</html>
